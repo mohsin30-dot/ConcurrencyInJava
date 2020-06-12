@@ -7,9 +7,15 @@ public class Main {
         // write your code here
         // whatever i write in here will be executed by main thread
         // threads always execute the jobs in a sequence
-        System.out.println("==Application Started==");
+        // thread is a execution context
 
-        System.out.println("== Application Finished==");
+        System.out.println("==Application Started=="); //job 1
+
+        for (int doc=1; doc<=10;doc++){
+            System.out.println("printing document #" + doc); // job 2
+        }
+
+        System.out.println("== Application Finished=="); //job 3
 
 
     }
